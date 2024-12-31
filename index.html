@@ -1,10 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel = "stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Devinciano</title>
+  <style> 
+  *{
+  margin:0; 
+  padding: 0; 
+}
+
+/* #ecc94bff gul #f44034ff rød #2b2b31ff svart */
+
+body{
+  height: 100vh; 
+  width: 100%; 
+}
+
+main{
+  position:relative; 
+  width: 100%; 
+  height: 100%;
+  display:flex; 
+  align-items:center;
+  justify-content: center;
+  flex-direction:column; 
+}
+
+
+.matkort {
+  padding: 20px;   
+  width: 250px;  
+  font-size: 1rem; 
+  display: flex; 
+  flex-direction: column;
+  text-align:center; 
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  
+}
+
+.matkort h2 {
+  font-size: 2rem; 
+  margin-bottom: 20px; 
+}
+
+.matkort button {
+  margin-top: 20px; 
+  width: 150px; 
+  height: 30px; 
+  text-align: center; 
+  border-radius: 8px; 
+  cursor: pointer; 
+}
+
+.orderCard {
+  display: none; 
+  width: 250px; 
+  padding: 20px; 
+  text-align:center; 
+  font-size: 1rem; 
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+
+
+
+.gardin {
+  width: 50%; 
+  height: 100%; 
+}
+
+.gardinR{
+  position:absolute; 
+  z-index:2; 
+  right:0; 
+  border-bottom-left-radius: 50%;
+}
+
+.gardinL{
+  position:absolute; 
+  z-index:2; 
+  left: 0; 
+  border-bottom-right-radius: 50%; 
+}
+
+.openBtn{
+  position:absolute; 
+  left: 0; 
+  right: 0; 
+  bottom: 25%; 
+  cursor:pointer; 
+  height: 50px; 
+
+  font-size: 1.2rem; 
+  margin-inline:auto; 
+  width: 150px; 
+  border-radius:20px; 
+  z-index: 3; 
+}   
+
+@keyframes openGardin {
+  from {
+    width: 50%; 
+  } to {
+    width:0%; 
+  }
+}
+  
+  </style>
 </head>
 <body>
 
@@ -26,6 +132,6 @@
   </main>
 
 
-  <script src="/index.js"></script>
+  <script></script>
 </body>
 </html>
